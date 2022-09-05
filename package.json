@@ -1,5 +1,5 @@
 {
-  "name": "carrentwebsite",
+  "name": "carrent",
   "version": "1.0.0",
   "description": "",
   "source": "src/index.html",
@@ -12,17 +12,17 @@
     "start": "node index.js",
     "dev": "parcel src/index.html",
     "prebuild": "npx rimraf build",
-    "build": "parcel build src/index.html --public-url /CarRentWebsite/"
+    "build": "parcel build src/index.html --public-url /CarRent/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GoncharenkoO/CarRentWebsite.git"
+    "url": "git+https://github.com/GoncharenkoO/CarRent.git"
   },
   "keywords": [],
   "author": "Olga Goncharenko <goncharenko86@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/GoncharenkoO/CarRentWebsite/issues"
+    "url": "https://github.com/GoncharenkoO/CarRent/issues"
   },
   "dependencies": {
     "jquery": "^3.6.0",
