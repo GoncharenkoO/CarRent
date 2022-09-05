@@ -4,7 +4,7 @@
   "description": "",
   "source": "src/index.html",
   "main": "index.js",
-  "homepage": "https://goncharenkoo.github.io/CarRent/",
+  "homepage": "https://goncharenkoo.github.io/carrent/",
   "targets": {
     "main": false
   },
