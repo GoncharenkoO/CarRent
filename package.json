@@ -4,6 +4,7 @@
   "description": "",
   "source": "src/index.html",
   "main": "index.js",
+  "homepage": "https://goncharenkoo.github.io/CarRent/",
   "targets": {
     "main": false
   },
@@ -23,7 +24,6 @@
   "bugs": {
     "url": "https://github.com/GoncharenkoO/CarRentWebsite/issues"
   },
-  "homepage": "https://github.io/GoncharenkoO/CarRentWebsite",
   "dependencies": {
     "jquery": "^3.6.0",
     "sass": "^1.54.4"
