@@ -23,7 +23,7 @@
   "bugs": {
     "url": "https://github.com/GoncharenkoO/CarRentWebsite/issues"
   },
-  "homepage": "https://github.com/GoncharenkoO/CarRentWebsite#readme",
+  "homepage": "https://github.com/GoncharenkoO/CarRentWebsite",
   "dependencies": {
     "jquery": "^3.6.0",
     "sass": "^1.54.4"
