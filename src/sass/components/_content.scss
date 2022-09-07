@@ -87,6 +87,10 @@
   display: block;
 }
 
+.main-wrapper {
+  position: relative;
+}
+
 #content {
   display: flex;
   flex-wrap: wrap;
