@@ -87,17 +87,10 @@
   display: block;
 }
 
-// .main-wrapper {
-//   display: flex;
-//   flex-direction: column;
-
-//   @media (min-width: 768px) {
-//     flex-direction: row;
-//   }
-// }
 #content {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 32px;
 }
 
 .card {
@@ -122,11 +115,11 @@
   font-weight: 700;
   font-size: 2rem;
   line-height: 140%;
-  display: flex;
-  align-items: center;
-  color: var(--footer-title-colors);
+  color: var(--footer-title-colors) !important;
   border-bottom: none !important;
   position: relative;
+  margin-bottom: 52px !important;
+  display: block !important;
 }
 
 .card-title {
@@ -170,6 +163,8 @@
 
 .card-body {
   padding-bottom: 1.2rem !important;
+  padding-top: 0rem !important;
+  margin-bottom: 25px;
 }
 .cart-text {
   font-weight: 400;
@@ -234,17 +229,16 @@
   color: var(--sidebar-span);
 }
 
-.button-card {
+#button-card {
   width: 140px;
   height: 56px;
-  background: var(--logo-text-color) !important;
+  background: var(--logo-text-color);
   border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.25;
-  display: flex;
-  align-items: center;
   text-align: center;
+  text-transform: capitalize;
 }
 
 .review-content {
@@ -316,8 +310,6 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 1.25;
-  display: flex;
-  align-items: center;
   text-align: center;
   border-radius: 4px;
   border: 1px solid var(--sidebar-span);
@@ -325,6 +317,7 @@
   color: var(--sidebar-span);
   width: 132px;
   height: 44px;
+  text-transform: capitalize;
 }
 
 .spinner-border {
@@ -389,21 +382,9 @@
   color: var(--main-text-color);
 }
 
-.review-brn {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.25;
-  display: flex;
-  align-items: center;
-  text-align: center;
-
-  color: var(--sidebar-span);
-}
-
-.dropdown-menu-center {
-  transform: translateX(-50%);
-  left: 93%;
-  margin-bottom: 24px;
+.container-fluid.recent-container {
+  padding-left: 0rem !important;
+  padding-right: 0rem !important;
 }
 
 .recent-text {
@@ -413,6 +394,7 @@
   display: flex;
   align-items: center;
   text-align: center;
+  margin-left: 20px;
 
   color: var(--sidebar-span);
 }
@@ -429,88 +411,33 @@
   color: var(--main-text-color);
 }
 
-.card-header {
-  margin-bottom: 27px !important;
-  position: relative;
-  display: block !important;
+.product-thumb {
+  margin: 0px 17px 28px;
 }
 
-// .product-card {
-//   background-color: var(--white-color);
-//   width: 317px;
-//   height: 415px;
-//   padding: 2px;
-// }
-
-#title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.25;
-  display: flex;
-  align-items: center;
-  color: var(--footer-title-colors);
+.img-product {
+  width: 24px;
 }
 
-#text {
-  margin-left: -249px;
-  position: absolute;
-  bottom: -8px;
-  font-weight: 700;
+.product-text {
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.3;
   display: flex;
   align-items: center;
+
   color: var(--sidebar-span);
 }
-.product-thumb {
-  margin-bottom: 52px;
-}
 
-.product {
-  padding: 0 !important;
-}
-.product-details {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 0px;
-  gap: 8px;
-  margin-bottom: 32px;
-}
-.img-product {
-  width: 60px;
-  height: 24px;
-  margin-right: 17px;
-  &:last-child {
-    margin-right: 0;
-  }
-}
-
-.product-link {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.product-links {
-  display: flex;
-  align-items: center;
-  margin-bottom: 15px;
-}
-
-#heart {
-  font-size: 20px;
-  margin-left: 10px;
-  color: var(--red-color);
-  margin-left: 178px;
-}
-
-.button-card-recent {
-  width: 116px;
+#button-card-recent {
+  width: 124px;
   height: 44px;
   background: var(--logo-text-color);
   border-radius: 4px;
+  text-transform: capitalize !important;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
 }
 
 .product-price {
@@ -518,9 +445,10 @@
   font-size: 20px;
   line-height: 1.25;
   display: flex;
-  align-items: center;
-
+  align-items: baseline;
+  margin-bottom: 0rem !important;
   color: var(--footer-title-colors);
+  margin-top: 10px;
 }
 
 .product-span {
