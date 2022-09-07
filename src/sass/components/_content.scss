@@ -87,31 +87,21 @@
   display: block;
 }
 
-.main-wrapper {
-  display: flex;
-  flex-direction: column;
+// .main-wrapper {
+//   display: flex;
+//   flex-direction: column;
 
-  @media (min-width: 768px) {
-    flex-direction: row;
-  }
+//   @media (min-width: 768px) {
+//     flex-direction: row;
+//   }
+// }
+#content {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .card {
   margin-bottom: 24px;
-}
-
-.card-title {
-  font-weight: 600;
-  font-size: 1rem;
-  line-height: 120%;
-  display: flex;
-  align-items: center;
-  letter-spacing: -0.01em;
-  margin-bottom: 1rem !important;
-
-  @media (min-width: 1200px) {
-    font-size: 2rem;
-  }
 }
 
 .card-text {
@@ -139,82 +129,49 @@
   position: relative;
 }
 
-.heart {
-  margin-left: 200px;
-  margin-right: 10px;
-  background: none;
-  border: none;
-  padding: 0 0 10px 0;
-  transform: scale(var(--button-scale, 1)) translateZ(0);
-  transition: transform 0.2s;
-  &:active {
-    --button-scale: 0.95;
-  }
+.card-title {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.01em;
+  margin-bottom: 1rem !important;
 
-  @media (min-width: 1200px) and (max-width: 1260px) {
-    margin-left: 170px;
+  @media (min-width: 1200px) {
+    font-size: 2rem;
   }
 }
 
-.heart,
-.heart-button {
-  cursor: pointer;
-  outline: none;
-  -webkit-appearance: none;
-  -webkit-tap-highlight-color: transparent;
-  .heart-flip {
-    --base: 28px;
-    --duration: 0.6s;
-    --active: #ea4673;
-    --inactive: #e1e3f1;
-    width: var(--base);
-    height: calc(var(--base) + var(--base) / 2);
-    border-radius: calc(var(--base) / 2) calc(var(--base) / 2) 0 0;
-    position: relative;
-    transform-origin: 50% 66.66%;
-    transform-style: preserve-3d;
-    transform: rotate(var(--rotate, -45deg));
-    transition: background var(--duration), transform var(--duration) ease;
-    background: var(--heart-background, var(--inactive));
-    &:before,
-    &:after {
-      content: '';
-      width: calc(var(--base) / 2);
-      height: var(--base);
-      border-radius: var(--pseudo-border-radius, calc(var(--base) / 2) 0 0 calc(var(--base) / 2));
-      position: absolute;
-      left: var(--pseudo-left, -50%);
-      transform-origin: var(--pseudo-origin, 100%) 50%;
-      bottom: 0;
-      background: var(--heart-background, var(--inactive));
-      filter: brightness(var(--pseudo-filter, 50%));
-      transform: translateX(1%) rotateY(var(--pseudo-rotate, 90deg)) translateZ(0);
-      transition: background var(--duration), transform var(--duration) ease, filter var(--duration);
-    }
-    &:after {
-      --pseudo-border-radius: 0 calc(var(--base) / 2) calc(var(--base) / 2) 0;
-      --pseudo-left: 100%;
-      --pseudo-origin: 0;
-      filter: brightness(var(--pseudo-filter-second, 100%));
-      transform: translateX(-1%) rotateY(var(--pseudo-rotate-second, 0deg)) translateZ(0);
-    }
-  }
-  &.active {
-    .heart-flip {
-      --rotate: 45deg;
-      --pseudo-filter: 100%;
-      --pseudo-filter-second: 50%;
-      --pseudo-rotate: 0deg;
-      --pseudo-rotate-second: 90deg;
-      --heart-background: var(--active);
-    }
-  }
+.card-link {
+  display: flex;
+  justify-content: flex-end;
 }
+
+.fas.fa-heart {
+  font-size: 20px;
+  margin-left: 10px;
+  color: var(--red-color);
+  margin-left: 117px;
+  padding-bottom: 5px;
+}
+
+.card-raiting {
+  position: absolute;
+  bottom: -20px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.3;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
+
 .card-body {
   padding-bottom: 1.2rem !important;
 }
-
-.text-card {
+.cart-text {
   font-weight: 400;
   font-size: 20px;
   line-height: 200%;
@@ -227,75 +184,10 @@
   }
 }
 
-.rating-body {
-  display: flex;
-  position: relative;
-  margin-bottom: 28px;
-}
-
-.rating-area {
-  position: absolute;
-  overflow: hidden;
-  width: 230px;
-  display: flex;
-  align-items: start;
-  bottom: -8px;
-  margin-left: 20px;
-}
-.rating-area:not(:checked) > input {
-  display: none;
-}
-.rating-area:not(:checked) > label {
-  float: right;
-  width: 35px;
-  padding: 0;
-  text-align: left;
-  cursor: pointer;
-  font-size: 28px;
-  line-height: 32px;
-  color: lightgrey;
-  text-shadow: 1px 1px #bbb;
-}
-.rating-area:not(:checked) > label:before {
-  content: '★';
-}
-.rating-area > input:checked ~ label {
-  color: gold;
-  text-shadow: 1px 1px #c60;
-}
-.rating-area:not(:checked) > label:hover,
-.rating-area:not(:checked) > label:hover ~ label {
-  color: gold;
-}
-.rating-area > input:checked + label:hover,
-.rating-area > input:checked + label:hover ~ label,
-.rating-area > input:checked ~ label:hover,
-.rating-area > input:checked ~ label:hover ~ label,
-.rating-area > label:hover ~ input:checked ~ label {
-  color: gold;
-  text-shadow: 1px 1px goldenrod;
-}
-.rate-area > label:active {
-  position: relative;
-}
-
-.raiting-text {
-  position: absolute;
-  margin-left: 190px;
-  bottom: -20px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 18px;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.02em;
-  color: var(--main-text-color);
-}
-
 .text-type {
   font-weight: 400;
   font-size: 20px;
-  line-height: 25px;
+  line-height: 1.25;
   display: flex;
   align-items: center;
   letter-spacing: -0.02em;
@@ -305,7 +197,7 @@
 .text-span {
   font-weight: 600;
   font-size: 20px;
-  line-height: 25px;
+  line-height: 1.25;
   display: flex;
   align-items: center;
   text-align: right;
@@ -317,7 +209,7 @@
 .text-types {
   font-weight: 700;
   font-size: 28px;
-  line-height: 35px;
+  line-height: 1.25;
   display: flex;
   align-items: center;
   color: var(--footer-title-colors);
@@ -327,7 +219,7 @@
 .text-spans {
   font-weight: 700;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   display: flex;
   align-items: center;
   color: var(--sidebar-span);
@@ -335,7 +227,7 @@
 .span {
   font-weight: 700;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   display: flex;
   align-items: center;
   text-decoration-line: line-through;
@@ -347,19 +239,29 @@
   height: 56px;
   background: var(--logo-text-color) !important;
   border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
+.review-content {
+  margin-bottom: 32px;
+  border-radius: 10px;
+}
 .review-container {
   background-color: var(--white-color);
-  margin-bottom: 32px;
   padding: 1.5rem;
   border-radius: 10px;
+  margin: 0 auto;
 }
 
 .review-text {
   font-weight: 600;
   font-size: 20px;
-  line-height: 25px;
+  line-height: 1.25;
   display: flex;
   align-items: center;
   letter-spacing: -0.02em;
@@ -379,7 +281,7 @@
   border-radius: 4px;
   font-weight: 700;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1.3;
   align-items: center;
   text-align: center;
   color: var(--white-color);
@@ -393,10 +295,47 @@
   margin-right: 16px;
 }
 
-.review-title {
+.content {
+  display: none;
+  margin-bottom: 24px;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.show-all,
+.show-all:visited {
+  text-decoration: none;
+  display: block;
+}
+
+#showAll {
+  padding: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid var(--sidebar-span);
+  transition: all 600ms ease-in-out;
+  color: var(--sidebar-span);
+  width: 132px;
+  height: 44px;
+}
+
+.spinner-border {
+  margin-left: 6px;
+}
+
+.review-title,
+.recent-title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 25px;
+  line-height: 1.25;
   display: flex;
   align-items: center;
   color: var(--footer-title-colors);
@@ -410,23 +349,25 @@
 .review-data {
   font-weight: 500;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1.3;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   text-align: right;
   color: var(--sidebar-span);
+  margin-bottom: 0.5rem;
 }
 
 .review-text-type {
   font-weight: 500;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1.3;
   display: flex;
   align-items: center;
   color: var(--sidebar-span);
 }
 
+.card-rait,
 .review-rait {
   display: flex;
   flex-direction: row;
@@ -451,7 +392,7 @@
 .review-brn {
   font-weight: 600;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   display: flex;
   align-items: center;
   text-align: center;
@@ -468,7 +409,7 @@
 .recent-text {
   font-weight: 600;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   display: flex;
   align-items: center;
   text-align: center;
@@ -476,22 +417,35 @@
   color: var(--sidebar-span);
 }
 
-.card-header {
-  margin-bottom: 52px !important;
-  position: relative;
+.rec-text {
+  position: absolute;
+  bottom: -20px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.3;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
 }
 
-.product-card {
-  background-color: var(--white-color);
-  width: 317px;
-  height: 415px;
-  padding: 2px;
+.card-header {
+  margin-bottom: 27px !important;
+  position: relative;
+  display: block !important;
 }
+
+// .product-card {
+//   background-color: var(--white-color);
+//   width: 317px;
+//   height: 415px;
+//   padding: 2px;
+// }
 
 #title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 25px;
+  line-height: 1.25;
   display: flex;
   align-items: center;
   color: var(--footer-title-colors);
@@ -503,7 +457,7 @@
   bottom: -8px;
   font-weight: 700;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1.3;
   display: flex;
   align-items: center;
   color: var(--sidebar-span);
@@ -544,13 +498,6 @@
   align-items: center;
   margin-bottom: 15px;
 }
-.fas.fa-heart {
-  font-size: 20px;
-  margin-left: 10px;
-  color: var(--red-color);
-  margin-left: 117px;
-  padding-bottom: 5px;
-}
 
 #heart {
   font-size: 20px;
@@ -569,7 +516,7 @@
 .product-price {
   font-weight: 700;
   font-size: 20px;
-  line-height: 25px;
+  line-height: 1.25;
   display: flex;
   align-items: center;
 
@@ -579,7 +526,7 @@
 .product-span {
   font-weight: 700;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1.3;
   display: flex;
   align-items: center;
 

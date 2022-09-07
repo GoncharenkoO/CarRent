@@ -60,9 +60,9 @@
     ></script>
     <script>
       $(document).ready(function () {
-        $('#r1').on('keyup', function () {
+        $('#docsearch-input').on('keyup', function () {
           var value = $(this).val().toLowerCase();
-          $('#h1-x').filter(function () {
+          $('#content > div').filter(function () {
             $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
           });
         });
@@ -76,5 +76,13 @@
       });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
+    <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+    <script>
+      addBackToTop({
+        diameter: 40,
+        backgroundColor: '#',
+        textColor: '#aa73d6',
+      });
+    </script>
   </body>
 </html>

@@ -1,3 +1,3 @@
 import './sass/styles.scss';
 
-import './js/heart';
+import './js/show';

@@ -305,7 +305,7 @@
           <div class="col-6 themed-grid-col">
             <div class="pb-3"></div>
             <div class="card text-white">
-              <img class="card-img" src="./images/content/View.png" alt="Card image" />
+              <img class="card-img img-fluid" src="./images/content/View.png" alt="Card image" />
               <div class="card-img-overlay">
                 <h1 class="card-title">Sports car with the best design and acceleration</h1>
                 <p class="card-text">
@@ -315,13 +315,13 @@
             </div>
             <div class="row">
               <div class="col-md-4 themed-grid-col">
-                <img src="./images/content/view 1.png" alt="image" />
+                <img class="img-fluid" src="./images/content/view 1.png" alt="image" />
               </div>
               <div class="col-md-4 themed-grid-col">
-                <img src="./images/content/view2.png" alt="image" />
+                <img class="img-fluid" src="./images/content/view2.png" alt="image" />
               </div>
               <div class="col-md-4 themed-grid-col">
-                <img src="./images/content/view3.png" alt="image" />
+                <img class="img-fluid" src="./images/content/view3.png" alt="image" />
               </div>
             </div>
           </div>
@@ -329,31 +329,42 @@
           <div class="col-6 themed-grid-col">
             <div class="pb-3"></div>
             <div class="card">
-              <div>
-                <div class="card-header">
-                  <h1 class="card-title" style="padding-top: 0.7rem">Nissan GT - R</h1>
-                  <button class="heart">
-                    <div class="heart-flip"></div>
-                  </button>
-                </div>
-                <div class="rating-body">
-                  <div class="rating-area">
-                    <input type="radio" id="star-1" name="rating" value="1" />
-                    <label for="star-1" title="Оценка «1»"></label>
-                    <input type="radio" id="star-2" name="rating" value="2" />
-                    <label for="star-2" title="Оценка «2»"></label>
-                    <input type="radio" id="star-3" name="rating" value="3" />
-                    <label for="star-3" title="Оценка «3»"></label>
-                    <input type="radio" id="star-4" name="rating" value="4" />
-                    <label for="star-4" title="Оценка «4»"></label>
-                    <input type="radio" id="star-5" name="rating" value="5" />
-                    <label for="star-5" title="Оценка «5»"></label>
+              <div class="card-header">
+                <section class="">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h1 class="card-title" style="padding-top: 0.7rem">Nissan GT - R</h1>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="card-link">
+                        <a href="#"><i class="fas fa-heart"></i></a>
+                      </div>
+                    </div>
                   </div>
-                  <p class="raiting-text">440+ Reviewer</p>
-                </div>
+                </section>
+                <section class="">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <p class="card-raiting">
+                        <img
+                          class="card-rait img-fluid"
+                          style="margin-left: 0"
+                          src="./images/review/rating.png"
+                          alt="Rait"
+                          align="left"
+                          vspace="5"
+                          hspace="5"
+                        />
+                        440+ Reviewer
+                      </p>
+                    </div>
+                    <div class="col-sm-4"></div>
+                  </div>
+                </section>
               </div>
+
               <div class="card-body">
-                <p class="text-card">
+                <p class="cart-text">
                   NISMO has become the embodiment of Nissan's outstanding performance, inspired by
                   the most unforgiving proving ground, the "race track".
                 </p>
@@ -397,102 +408,165 @@
           </div>
         </div>
         <div class="row mb-3 main-wrapper">
-          <section class="main-content">
-            <div class="wrapper-main">
-              <div class="review-container">
-                <p class="review-text">Reviews<span class="review-span">13</span></p>
-                <div class="row">
-                  <div class="col 12">
-                    <section class="" style="margin-bottom: 24px">
-                      <img
-                        class="review-img"
-                        src="./images/review/Profills.png"
-                        alt="Avatar"
-                        width="56"
-                        height="56"
-                        role="img"
-                      />
-                      <section class="">
-                        <div class="row">
-                          <div class="col-sm-6">
-                            <h2 class="review-title">Alex Stanton</h2>
-                            <p class="review-text-type">CEO at Bukalapak</p>
-                          </div>
-                          <div class="col-sm-6">
-                            <span class="review-data"
-                              ><time datetime="2022-07-21">21 July 2022</time></span
-                            >
-                            <img
-                              class="review-rait"
-                              src="./images/review/rating.png"
-                              alt="rating"
-                            />
-                          </div>
+          <section class="review-content">
+            <div class="review-container container-fluid">
+              <p class="review-text">Reviews<span class="review-span">13</span></p>
+              <div class="row">
+                <div class="col 12">
+                  <div class="content">
+                    <img
+                      class="review-img img-fluid"
+                      src="./images/review/Profills.png"
+                      alt="Avatar"
+                      width="56"
+                      height="56"
+                      role="img"
+                    />
+                    <section class="">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <h2 class="review-title">Alex Stanton</h2>
+                          <p class="review-text-type">CEO at Bukalapak</p>
                         </div>
-                      </section>
-                      <p class="review-texts">
-                        We are very happy with the service from the MORENT App. Morent has a low
-                        price and also a large variety of cars with good and comfortable facilities.
-                        In addition, the service provided by the officers is also very friendly and
-                        very polite.
-                      </p>
-                    </section>
-                  </div>
-                  <div class="col 12">
-                    <section class="" style="margin-bottom: 24px">
-                      <img
-                        class="review-img"
-                        src="./images/review/Profill.png"
-                        alt="Avatar"
-                        width="56"
-                        height="56"
-                        role="img"
-                      />
-                      <section class="" id="content">
-                        <div class="row">
-                          <div class="col-sm-6">
-                            <h2 class="review-title">Skylar Dias</h2>
-                            <p class="review-text-type">CEO at Amazon</p>
-                          </div>
-                          <div class="col-sm-6">
-                            <span class="review-data"
-                              ><time datetime="2022-07-20">20 July 2022</time></span
-                            >
-                            <img
-                              class="review-rait"
-                              src="./images/review/rating.png"
-                              alt="rating"
-                            />
-                          </div>
+                        <div class="col-sm-6">
+                          <span class="review-data"
+                            ><time datetime="2022-07-21">21 July 2022</time></span
+                          >
+                          <img
+                            class="review-rait img-fluid"
+                            src="./images/review/rating.png"
+                            alt="rating"
+                          />
                         </div>
-                      </section>
-                      <p class="review-texts">
-                        We are greatly helped by the services of the MORENT Application. Morent has
-                        low prices and also a wide variety of cars with good and comfortable
-                        facilities. In addition, the service provided by the officers is also very
-                        friendly and very polite.
-                      </p>
+                      </div>
                     </section>
+                    <p class="review-texts">
+                      We are very happy with the service from the MORENT App. Morent has a low price
+                      and also a large variety of cars with good and comfortable facilities. In
+                      addition, the service provided by the officers is also very friendly and very
+                      polite.
+                    </p>
                   </div>
-                </div>
-                <div class="dropdown dropdown-menu-center">
-                  <button
-                    id="showAll"
-                    class="btn btn-outline-secondary review-brn dropdown-toggle"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Show All
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
+
+                  <div class="content">
+                    <img
+                      class="review-img img-fluid"
+                      src="./images/review/Profill.png"
+                      alt="Avatar"
+                      width="56"
+                      height="56"
+                      role="img"
+                    />
+                    <section class="">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <h2 class="review-title">Skylar Dias</h2>
+                          <p class="review-text-type">CEO at Amazon</p>
+                        </div>
+                        <div class="col-sm-6">
+                          <span class="review-data"
+                            ><time datetime="2022-07-20">20 July 2022</time></span
+                          >
+                          <img
+                            class="img-fluid review-rait"
+                            src="./images/review/rating.png"
+                            alt="rating"
+                          />
+                        </div>
+                      </div>
+                    </section>
+                    <p class="review-texts">
+                      We are greatly helped by the services of the MORENT Application. Morent has
+                      low prices and also a wide variety of cars with good and comfortable
+                      facilities. In addition, the service provided by the officers is also very
+                      friendly and very polite.
+                    </p>
+                  </div>
+
+                  <div class="content">
+                    <img
+                      class="review-img img-fluid"
+                      src="./images/review/Profills.png"
+                      alt="Avatar"
+                      width="56"
+                      height="56"
+                      role="img"
+                    />
+                    <section class="">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <h2 class="review-title">Alex Stanton</h2>
+                          <p class="review-text-type">CEO at Bukalapak</p>
+                        </div>
+                        <div class="col-sm-6">
+                          <span class="review-data"
+                            ><time datetime="2022-07-21">21 July 2022</time></span
+                          >
+                          <img
+                            class="review-rait img-fluid"
+                            src="./images/review/rating.png"
+                            alt="rating"
+                          />
+                        </div>
+                      </div>
+                    </section>
+                    <p class="review-texts">
+                      We are very happy with the service from the MORENT App. Morent has a low price
+                      and also a large variety of cars with good and comfortable facilities. In
+                      addition, the service provided by the officers is also very friendly and very
+                      polite.
+                    </p>
+                  </div>
+
+                  <div class="content">
+                    <img
+                      class="review-img img-fluid"
+                      src="./images/review/Profill.png"
+                      alt="Avatar"
+                      width="56"
+                      height="56"
+                      role="img"
+                    />
+                    <section class="">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <h2 class="review-title">Skylar Dias</h2>
+                          <p class="review-text-type">CEO at Amazon</p>
+                        </div>
+                        <div class="col-sm-6">
+                          <span class="review-data"
+                            ><time datetime="2022-07-20">20 July 2022</time></span
+                          >
+                          <img
+                            class="img-fluid review-rait"
+                            src="./images/review/rating.png"
+                            alt="rating"
+                          />
+                        </div>
+                      </div>
+                    </section>
+                    <p class="review-texts">
+                      We are greatly helped by the services of the MORENT Application. Morent has
+                      low prices and also a wide variety of cars with good and comfortable
+                      facilities. In addition, the service provided by the officers is also very
+                      friendly and very polite.
+                    </p>
+                  </div>
+                  <div class="col text-center button-wrapper">
+                    <button type="button" class="btn btn-outline-secondary show-all" id="showAll">
+                      Show All
+                      <span
+                        class="spinner-border spinner-border-sm"
+                        role="status"
+                        aria-hidden="true"
+                      ></span>
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
+          </section>
+          <section>
             <div class="container">
               <div class="row">
                 <section class="">
@@ -510,31 +584,50 @@
                     </div>
                   </div>
                 </section>
-
-                <div class="col-md-4 mb-3">
-                  <div class="product-card">
-                    <div>
+                <div class="" id="content">
+                  <div class="col-md-4 mb-3">
+                    <!-- <div class="product-card"> -->
+                    <div class="card" style="background-color: var(--white-color)">
                       <div class="card-header">
-                        <h2 class="card-title" style="padding-top: 0.7rem" id="title">
-                          Koenigsegg
-                        </h2>
-                        <div class="product-link">
-                          <a href="#"><i class="fas fa-heart"></i></a>
-                        </div>
-                        <div class=""><p class="raiting-text" id="text">Sport</p></div>
+                        <section>
+                          <div class="row">
+                            <div class="col-sm-8">
+                              <h2 class="recent-title" style="padding-top: 0.7rem">Koenigsegg</h2>
+                            </div>
+                            <div class="col-sm-4">
+                              <div class="card-link">
+                                <a href="#"><i class="fas fa-heart"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                          <section class="">
+                            <div class="row">
+                              <div class="col-sm-8">
+                                <p class="rec-text">Sport</p>
+                              </div>
+                              <div class="col-sm-4"></div>
+                            </div>
+                          </section>
+                        </section>
                       </div>
                       <div class="product-thumb">
-                        <a href="#"><img src="./images/recent/Car.png" alt="Car" /></a>
+                        <a href="#"
+                          ><img class="img-fluid" src="./images/recent/Car.png" alt="Car"
+                        /></a>
                       </div>
                       <div class="product-details">
                         <img
-                          class="img-product"
+                          class="img-product img-fluid"
                           src="./images/recent/Gasoline.png"
                           alt="Gasoline"
                         />
-                        <img class="img-product" src="./images/recent/Manual.png" alt="Manual" />
                         <img
-                          class="img-product"
+                          class="img-product img-fluid"
+                          src="./images/recent/Manual.png"
+                          alt="Manual"
+                        />
+                        <img
+                          class="img-product img-fluid"
                           src="./images/recent/Capacity.png"
                           alt="Capacity"
                         />
@@ -552,47 +645,101 @@
                       </div>
                     </div>
                   </div>
-                </div>
 
-                <div class="col-md-4 mb-3">
-                  <div class="product-card">
-                    <div>
-                      <div class="card-header">
-                        <h1 class="card-title" style="padding-top: 0.7rem" id="title">
-                          Nissan GT - R
-                        </h1>
-                        <div class="">
-                          <p class="raiting-text" id="text" style="margin-left: -129px">Sport</p>
+                  <div class="col-md-4 mb-3">
+                    <div class="product-card">
+                      <div>
+                        <div class="card-header">
+                          <h1 class="card-title" style="padding-top: 0.7rem" id="title">
+                            Nissan GT - R
+                          </h1>
+                          <div class="">
+                            <p class="raiting-text" id="text" style="margin-left: -129px">Sport</p>
+                          </div>
+                        </div>
+                        <div class="product-thumb">
+                          <a href="#"
+                            ><img class="img-fluid" src="./images/recent/Car1.png" alt="Car"
+                          /></a>
+                        </div>
+                        <div class="product-details">
+                          <img
+                            class="img-product img-fluid"
+                            src="./images/recent/Gasoline.png"
+                            alt="Gasoline"
+                          />
+                          <img
+                            class="img-product img-fluid"
+                            src="./images/recent/Manual.png"
+                            alt="Manual"
+                          />
+                          <img
+                            class="img-product img-fluid"
+                            src="./images/recent/Capacity.png"
+                            alt="Capacity"
+                          />
+                        </div>
+
+                        <div
+                          class="product-bottom-details d-flex justify-content-around product-item"
+                        >
+                          <div class="row">
+                            <div class="col-sm-6 product">
+                              <p class="product-price">
+                                $80.00/ <span class="product-span">days</span>
+                              </p>
+                              <p class="span">$100.00</p>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-primary button-card-recent">
+                                <a href="#" class="text-white">Rent Now</a>
+                              </button>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                      <div class="product-thumb">
-                        <a href="#"><img src="./images/recent/Car1.png" alt="Car" /></a>
-                      </div>
-                      <div class="product-details">
-                        <img
-                          class="img-product"
-                          src="./images/recent/Gasoline.png"
-                          alt="Gasoline"
-                        />
-                        <img class="img-product" src="./images/recent/Manual.png" alt="Manual" />
-                        <img
-                          class="img-product"
-                          src="./images/recent/Capacity.png"
-                          alt="Capacity"
-                        />
-                      </div>
+                    </div>
+                  </div>
 
-                      <div
-                        class="product-bottom-details d-flex justify-content-around product-item"
-                      >
-                        <div class="row">
-                          <div class="col-sm-6 product">
-                            <p class="product-price">
-                              $80.00/ <span class="product-span">days</span>
-                            </p>
-                            <p class="span">$100.00</p>
+                  <div class="col-md-4 mb-3">
+                    <div class="product-card">
+                      <div>
+                        <div class="card-header">
+                          <h1 class="card-title" style="padding-top: 0.7rem" id="title">
+                            Rolls-Royce
+                          </h1>
+                          <div class="">
+                            <p class="raiting-text" id="text" style="margin-left: -116px">Sport</p>
                           </div>
-                          <div class="col-sm-6">
+                        </div>
+                        <div class="product-thumb">
+                          <a href="#"
+                            ><img class="img-fluid" src="./images/recent/Car3.png" alt="Car"
+                          /></a>
+                        </div>
+                        <div class="product-details">
+                          <img
+                            class="img-product img-fluid"
+                            src="./images/recent/Gasoline.png"
+                            alt="Gasoline"
+                          />
+                          <img
+                            class="img-product img-fluid"
+                            src="./images/recent/Manual.png"
+                            alt="Manual"
+                          />
+                          <img
+                            class="img-product img-fluid"
+                            src="./images/recent/Capacity.png"
+                            alt="Capacity"
+                          />
+                        </div>
+
+                        <div class="product-bottom-details d-flex justify-content-around">
+                          <div class="product-price">
+                            $96.00/ <span class="product-span">days</span>
+                          </div>
+                          <div class="product-links">
                             <button type="button" class="btn btn-primary button-card-recent">
                               <a href="#" class="text-white">Rent Now</a>
                             </button>
@@ -601,89 +748,102 @@
                       </div>
                     </div>
                   </div>
-                </div>
 
-                <div class="col-md-4 mb-3">
-                  <div class="product-card">
-                    <div>
-                      <div class="card-header">
-                        <h1 class="card-title" style="padding-top: 0.7rem" id="title">
-                          Rolls-Royce
-                        </h1>
-                        <div class="">
-                          <p class="raiting-text" id="text" style="margin-left: -116px">Sport</p>
+                  <div class="col-md-4 mb-3">
+                    <div class="product-card" style="height: 450px">
+                      <div>
+                        <div class="card-header">
+                          <h1 class="card-title" style="padding-top: 0.7rem" id="title">
+                            All New Rush
+                          </h1>
+                          <div class="">
+                            <p class="raiting-text" id="text" style="margin-left: -129px">SUV</p>
+                          </div>
                         </div>
-                      </div>
-                      <div class="product-thumb">
-                        <a href="#"><img src="./images/recent/Car3.png" alt="Car" /></a>
-                      </div>
-                      <div class="product-details">
-                        <img
-                          class="img-product"
-                          src="./images/recent/Gasoline.png"
-                          alt="Gasoline"
-                        />
-                        <img class="img-product" src="./images/recent/Manual.png" alt="Manual" />
-                        <img
-                          class="img-product"
-                          src="./images/recent/Capacity.png"
-                          alt="Capacity"
-                        />
-                      </div>
+                        <div class="product-thumb">
+                          <a href="#"
+                            ><img class="img-fluid" src="./images/recent/Car4.png" alt="Car"
+                          /></a>
+                        </div>
+                        <div class="product-details">
+                          <img
+                            class="img-product img-fluid"
+                            src="./images/recent/Gasoline.png"
+                            alt="Gasoline"
+                          />
+                          <img
+                            class="img-product img-fluid"
+                            src="./images/recent/Manual.png"
+                            alt="Manual"
+                          />
+                          <img
+                            class="img-product img-fluid"
+                            src="./images/recent/Capacity.png"
+                            alt="Capacity"
+                          />
+                        </div>
 
-                      <div class="product-bottom-details d-flex justify-content-around">
-                        <div class="product-price">
-                          $96.00/ <span class="product-span">days</span>
-                        </div>
-                        <div class="product-links">
-                          <button type="button" class="btn btn-primary button-card-recent">
-                            <a href="#" class="text-white">Rent Now</a>
-                          </button>
+                        <div
+                          class="product-bottom-details d-flex justify-content-around product-item"
+                        >
+                          <div class="row">
+                            <div class="col-sm-6 product">
+                              <p class="product-price">
+                                $72.00/ <span class="product-span">days</span>
+                              </p>
+                              <p class="span">$80.00</p>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-primary button-card-recent">
+                                <a href="#" class="text-white">Rent Now</a>
+                              </button>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
 
-                <div class="col-md-4 mb-3">
-                  <div class="product-card" style="height: 450px">
-                    <div>
-                      <div class="card-header">
-                        <h1 class="card-title" style="padding-top: 0.7rem" id="title">
-                          All New Rush
-                        </h1>
-                        <div class="">
-                          <p class="raiting-text" id="text" style="margin-left: -129px">SUV</p>
-                        </div>
-                      </div>
-                      <div class="product-thumb">
-                        <a href="#"><img src="./images/recent/Car4.png" alt="Car" /></a>
-                      </div>
-                      <div class="product-details">
-                        <img
-                          class="img-product"
-                          src="./images/recent/Gasoline.png"
-                          alt="Gasoline"
-                        />
-                        <img class="img-product" src="./images/recent/Manual.png" alt="Manual" />
-                        <img
-                          class="img-product"
-                          src="./images/recent/Capacity.png"
-                          alt="Capacity"
-                        />
-                      </div>
-
-                      <div
-                        class="product-bottom-details d-flex justify-content-around product-item"
-                      >
-                        <div class="row">
-                          <div class="col-sm-6 product">
-                            <p class="product-price">
-                              $72.00/ <span class="product-span">days</span>
-                            </p>
-                            <p class="span">$80.00</p>
+                  <div class="col-md-4 mb-3">
+                    <div class="product-card" style="height: 450px">
+                      <div>
+                        <div class="card-header">
+                          <h1 class="card-title" style="padding-top: 0.7rem" id="title">CR - V</h1>
+                          <div class="product-links">
+                            <a href="#"><i class="fas fa-heart" id="heart"></i></a>
                           </div>
-                          <div class="col-sm-6">
+                          <div class="">
+                            <p class="raiting-text" id="text" style="margin-left: -255px">SUV</p>
+                          </div>
+                        </div>
+                        <div class="product-thumb">
+                          <a href="#"
+                            ><img class="img-fluid" src="./images/recent/Car5.png" alt="Car"
+                          /></a>
+                        </div>
+                        <div class="product-details">
+                          <img
+                            class="img-product img-fluid"
+                            src="./images/recent/Gasoline.png"
+                            alt="Gasoline"
+                          />
+                          <img
+                            class="img-product img-fluid"
+                            src="./images/recent/Manual.png"
+                            alt="Manual"
+                          />
+                          <img
+                            class="img-product img-fluid"
+                            src="./images/recent/Capacity.png"
+                            alt="Capacity"
+                          />
+                        </div>
+
+                        <div class="product-bottom-details d-flex justify-content-around">
+                          <div class="product-price">
+                            $80.00/ <span class="product-span">days</span>
+                          </div>
+                          <div class="product-links">
                             <button type="button" class="btn btn-primary button-card-recent">
                               <a href="#" class="text-white">Rent Now</a>
                             </button>
@@ -692,87 +852,50 @@
                       </div>
                     </div>
                   </div>
-                </div>
 
-                <div class="col-md-4 mb-3">
-                  <div class="product-card" style="height: 450px">
-                    <div>
-                      <div class="card-header">
-                        <h1 class="card-title" style="padding-top: 0.7rem" id="title">CR - V</h1>
-                        <div class="product-links">
-                          <a href="#"><i class="fas fa-heart" id="heart"></i></a>
+                  <div class="col-md-4 mb-3">
+                    <div class="product-card" style="height: 450px">
+                      <div>
+                        <div class="card-header">
+                          <h1 class="card-title" style="padding-top: 0.7rem" id="title">
+                            All New Terios
+                          </h1>
+                          <div class="">
+                            <p class="raiting-text" id="text" style="margin-left: -255px">SUV</p>
+                          </div>
                         </div>
-                        <div class="">
-                          <p class="raiting-text" id="text" style="margin-left: -255px">SUV</p>
+                        <div class="product-thumb">
+                          <a href="#"
+                            ><img class="img-fluid" src="./images/recent/Car6.png" alt="Car"
+                          /></a>
                         </div>
-                      </div>
-                      <div class="product-thumb">
-                        <a href="#"><img src="./images/recent/Car5.png" alt="Car" /></a>
-                      </div>
-                      <div class="product-details">
-                        <img
-                          class="img-product"
-                          src="./images/recent/Gasoline.png"
-                          alt="Gasoline"
-                        />
-                        <img class="img-product" src="./images/recent/Manual.png" alt="Manual" />
-                        <img
-                          class="img-product"
-                          src="./images/recent/Capacity.png"
-                          alt="Capacity"
-                        />
-                      </div>
+                        <div class="product-details">
+                          <img
+                            class="img-product img-fluid"
+                            src="./images/recent/Gasoline.png"
+                            alt="Gasoline"
+                          />
+                          <img
+                            class="img-product img-fluid"
+                            src="./images/recent/Manual.png"
+                            alt="Manual"
+                          />
+                          <img
+                            class="img-product img-fluid"
+                            src="./images/recent/Capacity.png"
+                            alt="Capacity"
+                          />
+                        </div>
 
-                      <div class="product-bottom-details d-flex justify-content-around">
-                        <div class="product-price">
-                          $80.00/ <span class="product-span">days</span>
-                        </div>
-                        <div class="product-links">
-                          <button type="button" class="btn btn-primary button-card-recent">
-                            <a href="#" class="text-white">Rent Now</a>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-md-4 mb-3">
-                  <div class="product-card" style="height: 450px">
-                    <div>
-                      <div class="card-header">
-                        <h1 class="card-title" style="padding-top: 0.7rem" id="title">
-                          All New Terios
-                        </h1>
-                        <div class="">
-                          <p class="raiting-text" id="text" style="margin-left: -255px">SUV</p>
-                        </div>
-                      </div>
-                      <div class="product-thumb">
-                        <a href="#"><img src="./images/recent/Car6.png" alt="Car" /></a>
-                      </div>
-                      <div class="product-details">
-                        <img
-                          class="img-product"
-                          src="./images/recent/Gasoline.png"
-                          alt="Gasoline"
-                        />
-                        <img class="img-product" src="./images/recent/Manual.png" alt="Manual" />
-                        <img
-                          class="img-product"
-                          src="./images/recent/Capacity.png"
-                          alt="Capacity"
-                        />
-                      </div>
-
-                      <div class="product-bottom-details d-flex justify-content-around">
-                        <div class="product-price">
-                          $74.00/ <span class="product-span">days</span>
-                        </div>
-                        <div class="product-links">
-                          <button type="button" class="btn btn-primary button-card-recent">
-                            <a href="#" class="text-white">Rent Now</a>
-                          </button>
+                        <div class="product-bottom-details d-flex justify-content-around">
+                          <div class="product-price">
+                            $74.00/ <span class="product-span">days</span>
+                          </div>
+                          <div class="product-links">
+                            <button type="button" class="btn btn-primary button-card-recent">
+                              <a href="#" class="text-white">Rent Now</a>
+                            </button>
+                          </div>
                         </div>
                       </div>
                     </div>
