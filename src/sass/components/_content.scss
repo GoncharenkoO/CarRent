@@ -145,6 +145,7 @@
   height: auto;
   @media (min-width: 1200px) {
     margin-bottom: 27px;
+    flex-direction: row !important;
   }
 }
 
@@ -156,6 +157,9 @@
 
 .col-6.intro-col {
   width: 100% !important;
+  @media (min-width: 1200px) {
+    width: 50% !important;
+  }
 }
 .col-6.themed-grid-col {
   margin-bottom: 27px;
@@ -166,8 +170,33 @@
 }
 
 .col-sm-8.intro-title,
-.col-sm-4.intro-heart {
+.col-sm-4.intro-heart,
+.col-sm-6.intro-span,
+.col-sm-8.intro-price,
+.col-sm-4.intro-price {
   width: 48%;
+}
+
+.col-sm-8.intro-title,
+.col-sm-8.intro-price,
+.recent-header {
+  @media (min-width: 1200px) {
+    width: 66.66666667%;
+  }
+}
+
+.col-sm-4.intro-heart,
+.col-sm-4.intro-price,
+.recent-header {
+  @media (min-width: 1200px) {
+    width: 33.33333333%;
+  }
+}
+.col-sm-6.intro-span,
+.recent-price {
+  @media (min-width: 1200px) {
+    width: 50%;
+  }
 }
 
 .card {
@@ -227,6 +256,9 @@
   display: flex;
   justify-content: flex-end;
   line-height: 1;
+  @media (min-width: 1200px) {
+    line-height: 1.45;
+  }
 }
 
 .fas.fa-heart {
@@ -263,19 +295,12 @@
   letter-spacing: -0.02em;
   color: var(--main-text-color);
   margin-bottom: 32px;
-  @media (min-width: 768px) and (max-width: 1199px) {
+  @media (min-width: 768px) and (max-width: 1198.99px) {
     font-size: 12px;
   }
-  @media (min-width: 1200px) and (max-width: 1235.98px) {
-    font-size: 14px;
-  }
-  @media (min-width: 1236px) {
+  @media (min-width: 1200px) {
     font-size: 20px;
   }
-}
-
-.col-sm-6.intro-span {
-  width: 48%;
 }
 
 .text-type {
@@ -318,13 +343,8 @@
     margin-bottom: 32px !important;
   }
   @media (min-width: 1200px) {
-    margin-bottom: 68px;
+    margin-bottom: 40px;
   }
-}
-
-.col-sm-8.intro-price,
-.col-sm-4.intro-price {
-  width: 48%;
 }
 
 .text-types {
@@ -553,6 +573,21 @@
 
 .bd-toc {
   grid-area: toc;
+}
+
+.col-sm-6.section-row,
+.col-sm-8.recent-header,
+.col-sm-4.recent-header,
+.col-sm-6.recent-price {
+  width: 48%;
+}
+
+.col-md-4.recent-content {
+  width: 101%;
+
+  @media (min-width: 1200px) {
+    width: 33.33333333%;
+  }
 }
 
 .recent-text {
