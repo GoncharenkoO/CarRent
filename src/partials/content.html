@@ -1,18 +1,21 @@
 <div class="container-xxl bd-gutter mt-3 my-md-4 bd-layout">
   <aside class="bd-sidebar">
     <div
-      class="offcanvas offcanvas-start"
+      class="offcanvas-lg offcanvas-start"
       data-bs-scroll="true"
       tabindex="-1"
-      id="offcanvasExample"
-      aria-labelledby="offcanvasExampleLabel"
+      id="bdSidebar"
+      aria-labelledby="bdSidebarOffcanvasLabel"
+      role="dialog"
     >
       <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="bdSidebarOffcanvasLabel"></h5>
         <button
           type="button"
           class="btn-close"
           data-bs-dismiss="offcanvas"
           aria-label="Close"
+          data-bs-target="#bdSidebar"
         ></button>
       </div>
       <div class="offcanvas-body">
@@ -209,7 +212,7 @@
                     </div>
                   </div>
                 </section>
-                <section class="">
+                <section class="section-mag">
                   <div class="row">
                     <div class="col-sm-8 intro-price">
                       <p class="text-types">$80.00/ <span class="text-spans">days</span></p>
