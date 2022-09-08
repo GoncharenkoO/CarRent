@@ -130,24 +130,6 @@
   }
 }
 
-.btn-outline-primary {
-  padding: 0.5rem 0.375rem 0.375rem !important;
-}
-
-.btn.btn-outline-primary {
-  --bs-btn-padding-x: 0.55rem;
-  --bs-btn-padding-y: 0.355rem;
-  border: none;
-}
-
-.btn.btn-outline-primary:hover,
-.btn.btn-outline-primary:focus {
-  color: var(--bs-btn-hover-color);
-  background-color: var(--bs-btn-hover-bg);
-  --bs-btn-focus-box-shadow: none;
-  --bs-btn-hover-bg: var(--white-color);
-}
-
 .d-md-flex.input-group.my-auto {
   flex-wrap: nowrap;
   width: 265px;
@@ -163,10 +145,13 @@
   }
 }
 
-.input-group-text.border-0 {
-  background-color: var(--white-color);
-  border: none;
-  padding: 0.355rem 0.55rem;
+.DocSearch.DocSearch-Button {
+  background-color: var(--white-color) !important;
+  border: none !important;
+  --docsearch-searchbox-shadow: none;
+  text-align: center;
+  margin: auto;
+  padding: 0 12px;
 }
 
 #basic-addon1.input-group-text {
