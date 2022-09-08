@@ -123,26 +123,18 @@
       'intro'
       'toc'
       'content';
-    // grid-template-rows: auto auto 1fr;
-    grid-template-rows: 540px auto auto;
+    grid-template-rows: 400px auto auto;
     gap: inherit;
   }
   @media (max-width: 991.98px) {
-    width: auto !important;
-    max-width: 760px !important;
+    max-width: 760px;
     margin-inline: auto;
-    margin-right: 0px !important;
+  }
+
+  @media (min-width: 992px) {
+    grid-template-rows: 540px auto auto;
   }
 }
-// .bd-main.ms-sm-auto {
-//   margin-left: 0 !important;
-// }
-
-// .bd-main.col-lg-10 {
-//   @media (min-width: 992px) {
-//     width: auto !important;
-//   }
-// }
 
 .bd-intro {
   grid-area: intro;
@@ -150,6 +142,10 @@
 
 .intro-row {
   flex-direction: column !important;
+  height: auto;
+  @media (min-width: 1200px) {
+    margin-bottom: 27px;
+  }
 }
 
 #content {
@@ -435,12 +431,20 @@
   width: 56px;
   height: 56px;
   float: left;
-  margin-right: 16px;
+  margin-right: 2px;
+
+  @media (min-width: 1200px) {
+    margin-right: 16px;
+  }
 }
 
 .content {
   display: none;
   margin-bottom: 24px;
+}
+
+.col-sm-6.review-car {
+  width: 50%;
 }
 
 .button-wrapper {
@@ -478,11 +482,14 @@
 .review-title,
 .recent-title {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.25;
   display: flex;
   align-items: center;
   color: var(--footer-title-colors);
+  @media (min-width: 1200px) {
+    font-size: 20px;
+  }
 }
 
 .review-section {
@@ -504,11 +511,14 @@
 
 .review-text-type {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.3;
   display: flex;
   align-items: center;
   color: var(--sidebar-span);
+  @media (minwidth: 1200px) {
+    font-size: 14px;
+  }
 }
 
 .card-rait,
@@ -527,10 +537,13 @@
 
 .review-texts {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 200%;
   letter-spacing: -0.02em;
   color: var(--main-text-color);
+  @media (minwidth: 1200px) {
+    font-size: 14px;
+  }
 }
 
 .container-fluid.recent-container {
