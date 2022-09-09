@@ -46,6 +46,17 @@
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      $(document).ready(function () {
+        $('#search-form').on('keyup', function () {
+          var value = $(this).val().toLowerCase();
+          $('#content > div').filter(function () {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+          });
+        });
+      });
+    </script>
     <script>
       $('.result').html($('input[type="range"]').val());
 
