@@ -118,8 +118,6 @@
 .bd-main {
   grid-area: main;
   position: relative;
-  height: 100%;
-  max-height: 100%;
   background-color: var(--background-main);
   @media (min-width: 768px) {
     display: grid;
@@ -142,7 +140,6 @@
 
 .bd-intro {
   grid-area: intro;
-  position: absolute;
 }
 
 .intro-row {
@@ -227,12 +224,8 @@
   }
 }
 
-.card-header.intro-header {
-  margin-bottom: 16px !important;
-
-  @media (min-width: 1200px) {
-    margin-bottom: 27px !important;
-  }
+.card-body {
+  margin-top: 27px;
 }
 
 .card-header {
@@ -254,7 +247,7 @@
   display: flex;
   align-items: center;
   letter-spacing: -0.01em;
-  margin-bottom: 1rem !important;
+  margin-bottom: 6px !important;
 
   @media (min-width: 768px) and (max-width: 1199.98px) {
     font-size: 1.4rem;
@@ -612,12 +605,10 @@
 
 .bd-toc {
   grid-area: toc;
-  // position: absolute;
 }
 
 .bd-content {
   grid-area: content;
-  // position: absolute;
 }
 
 .col-sm-6.section-row,
