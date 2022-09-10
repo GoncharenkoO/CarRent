@@ -225,7 +225,9 @@
 }
 
 .card-body {
-  margin-top: 27px;
+  @media (min-width: 768px) {
+    margin-top: 27px;
+  }
 }
 
 .card-header {
