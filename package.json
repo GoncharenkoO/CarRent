@@ -17,7 +17,7 @@
   "author": "Olga Goncharenko <goncharenko86@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AndreyTsapkov/CarRent/issues"
+    "url": "https://github.com/GoncharenkoO/CarRent/issues"
   },
   "dependencies": {
     "jquery": "^3.6.0",
