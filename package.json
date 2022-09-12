@@ -1,23 +1,23 @@
 {
-  "name": "testcarr",
+  "name": "carrent",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://goncharenkoo.github.io/TestCarR/",
+  "homepage": "https://goncharenkoo.github.io/CarRent/",
   "scripts": {
     "start": "node index.js",
     "dev": "parcel src/*.html",
     "prebuild": "npx rimraf build",
-    "build": "parcel build src/*.html --public-url /TestCarR/"
+    "build": "parcel build src/*.html --public-url /CarRent/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GoncharenkoO/TestCarR.git"
+    "url": "git+https://github.com/GoncharenkoO/CarRent.git"
   },
   "keywords": [],
   "author": "Olga Goncharenko <goncharenko86@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/GoncharenkoO/TestCarR/issues"
+    "url": "https://github.com/GoncharenkoO/CarRent/issues"
   },
   "dependencies": {
     "jquery": "^3.6.0",
