@@ -203,7 +203,19 @@
 
 .card {
   margin-bottom: 24px;
-  border-radius: 10px !important;
+  min-width: 0;
+  word-wrap: break-word;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  background-color: #fff;
+  background-clip: border-box;
+  border-radius: 10px;
+  flex-direction: column;
+  display: flex;
+  position: relative;
+  --bs-card-border-width: 0px !important;
 }
 
 .card-text {
@@ -596,7 +608,7 @@
   line-height: 200%;
   letter-spacing: -0.02em;
   color: var(--main-text-color);
-  @media (minwidth: 1200px) {
+  @media (min-width: 1200px) {
     font-size: 14px;
   }
 }
@@ -618,7 +630,7 @@
 .col-sm-8.recent-header,
 .col-sm-4.recent-header,
 .col-sm-6.recent-price {
-  width: 48%;
+  width: 50%;
 }
 
 .col-md-4.recent-content {
