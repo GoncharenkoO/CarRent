@@ -2,6 +2,7 @@
   "name": "carrent",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://goncharenkoo.github.io/CarRent/",
   "scripts": {
     "start": "node index.js",
     "dev": "parcel src/*.html",
